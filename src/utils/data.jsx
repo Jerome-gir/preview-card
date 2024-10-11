@@ -4,7 +4,7 @@ import imgLuxury from "../assets/icon-luxury.svg"
 
 export const cardsData = [
   {
-    rounded: "rounded-l-lg",
+    rounded: "sm:rounded-l-lg rounded-t-lg sm:rounded-none ",
     image: imgSedans,
     alt: "icon",
     title: "sedans",
@@ -23,7 +23,7 @@ export const cardsData = [
     textButton: "text-dark-cyan",
   },
   {
-    rounded: "rounded-r-lg",
+    rounded: "sm:rounded-r-lg rounded-b-lg sm:rounded-none",
     image: imgLuxury,
     alt: "icon",
     title: "luxury",

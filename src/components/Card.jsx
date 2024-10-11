@@ -10,14 +10,18 @@ export default function Card({
   textButton,
 }) {
   return (
-    <div className={`flex flex-col gap-10 ${bgColor} ${rounded} w-80 p-12`}>
+    <div
+      className={`flex flex-col gap-6 sm:gap-10 ${bgColor} ${rounded} w-80 p-12`}
+    >
       <img src={image} alt={alt} width={64} height={40} />
-      <h1 className="uppercase text-very-light-gray font-bigShoulders text-5xl">
+      <h1 className="uppercase text-very-light-gray font-bigShoulders text-3xl sm:text-5xl">
         {title}
       </h1>
-      <p className="text-transparent-white font-lexend mb-12">{description}</p>
+      <p className="text-transparent-white font-lexend text-sm sm:text-base sm:mb-12">
+        {description}
+      </p>
       <button
-        className={`bg-very-light-gray w-40 rounded-full py-3 ${textButton} font-lexend hover:text-very-light-gray hover:bg-opacity-0 border-2 border-transparent hover:border-white`}
+        className={`bg-very-light-gray w-32 sm:w-40 rounded-full py-2 sm:py-3 ${textButton} text-xs sm:text-base font-lexend sm:hover:text-very-light-gray sm:hover:bg-opacity-0 border-2 border-transparent sm:hover:border-white`}
       >
         Learn More
       </button>
